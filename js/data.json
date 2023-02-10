@@ -1,0 +1,17 @@
+{
+    "0": {
+        "imgUrl": "assets/blindcoding.jpg",
+        "title": "Blind Coding",
+        "shortDescription": "A coding competition where participants are not able to see the monitor or screen during the event. The competitors have to code without the visual aid of the monitor and rely solely on their keyboard and ears for feedback."
+    },
+    "1": {
+        "imgUrl": "assets/cybertronic.jpg",
+        "title": "CyberTronic",
+        "shortDescription": "Cyber security event for beginners that aimed to introduce attendees to various aspects of cybersecurity. During the event, workshops were held on topics such as steganography, honey pots, and SQL injection. The event also included a capture the flag (CTF) competition to give attendees hands-on experience with real-world cyber security challenges."
+    },
+    "2": {
+        "imgUrl": "assets/hack.jpg",
+        "title": "Intro to Opensource: Hacktoberfest Edition",
+        "shortDescription": "A beginner-level event aimed at introducing attendees to the world of open source software and the annual Hacktoberfest event. The event provided a comprehensive overview of Git, GitHub, and Hacktoberfest, and included a hands-on workshop on creating a pull request. The event was designed to equip attendees with the skills and knowledge they need to get started with open source and participate in the Hacktoberfest event."
+    }
+}
