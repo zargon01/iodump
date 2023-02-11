@@ -8,9 +8,8 @@
 
 
 
-import eventData from './data.json' assert {type: 'json'};
+import eventData from './eventData.json' assert {type: 'json'};
 
-console.log(eventData)
 
 let recentEvents = document.getElementById("recent-events");
 
