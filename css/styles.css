@@ -10,6 +10,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ 
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11307,4 +11308,17 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 15rem;
+}
+
+.carousel-item{
+  height: 30rem;
+  border: 1px solid green;
+}
+
+@media only screen and (max-width: 767px) {
+  .carousel-item{
+      height: 15rem;
+     
+  }
+
 }
