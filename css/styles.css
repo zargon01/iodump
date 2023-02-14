@@ -11310,15 +11310,43 @@ html {
   min-height: 15rem;
 }
 
+/* crousel css by sachin 11/02/23 */
 .carousel-item{
   height: 30rem;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 @media only screen and (max-width: 767px) {
   .carousel-item{
       height: 15rem;
      
+  }
+
+}
+
+
+
+
+@keyframes planeAnim {
+
+  50% { left: 40%; }
+
+  55% {left: 39%; }
+
+  100% { left: 100%; }
+
+}
+
+.carousel-indicators{
+  position: absolute;
+  top: 90%;
+ 
+}
+
+
+@media only screen and (max-width: 767px) {
+  .carousel-indicators{
+    margin-top: -10%;
   }
 
 }
