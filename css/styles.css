@@ -11318,7 +11318,7 @@ html {
 
 @media only screen and (max-width: 767px) {
   .carousel-item{
-      height: 10rem;
+      height: 15rem;
      
   }
 
@@ -11346,7 +11346,7 @@ html {
 
 @media only screen and (max-width: 767px) {
   .carousel-indicators{
-    margin-top: -4%;
+    margin-top: -10%;
   }
 
 }
