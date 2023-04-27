@@ -1,31 +1,31 @@
 {
     "0": {
-        "imgUrl": "assets/praneeth.jpg",
+        "imgUrl": "assets/team/praneeth.jpg",
         "name": "Praneeth Shetty",
         "designation": "Founder & Club Lead"
     },
     "1": {
-        "imgUrl": "assets/akash.jpg",
+        "imgUrl": "assets/team/akash.jpg",
         "name": "Akash Yadav",
         "designation": "Club Coordinator"
     },
     "2": {
-        "imgUrl": "assets/harsh.jpg",
+        "imgUrl": "assets/team/harsh.jpg",
         "name": "Harsh Kumar",
         "designation": "Tech Lead"
     },
     "3": {
-        "imgUrl": "assets/vinay.jpg",
+        "imgUrl": "assets/team/vinay.jpg",
         "name": "Vinay Ghate",
         "designation": "Social Media & Promotion Lead"
     },
     "4": {
-        "imgUrl": "assets/rhitik.jpg",
+        "imgUrl": "assets/team/rhitik.jpg",
         "name": "Rhitik Nimbalkar",
         "designation": "Documentation Lead"
     },
     "5": {
-        "imgUrl": "assets/yash.jpg",
+        "imgUrl": "assets/team/yash.jpg",
         "name": "Yash Dubbalwar",
         "designation": "Co-Tech Lead"
     }
