@@ -15,7 +15,8 @@ img_list.sort(() => Math.random() - 0.5);
 img_list.forEach((imgUrl) => {
     recentEvents.innerHTML += `<div class="col-lg-4 mb-5">
     <div class="card h-100 shadow border-0">
-    <img class="card-img-top" src="${imgUrl}" alt="..." />
+    <img class="card-img-top" src="${imgUrl}" alt="..." loading="lazy" />
+
     </div>
     </div>`;
 })
