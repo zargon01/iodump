@@ -1,160 +1,389 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta charset="utf-8">
     <title>IODump</title>
-    <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 </head>
 
-<body class="d-flex flex-column h-100">
+<body>
 
-    <main class="flex-shrink-0">
-        <!-- Navigation-->
-        <div id="navigation"></div>
+  
+    <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
+    </div>
+    <header>
+        <!-- navbar starts -->
+        <div class="inner-width container inner_width_index_1">
+            <a href="index.html">
+                <h1 class="logo logo_home_page"><img src="assets/iodump_clear_dark.png" alt="" /><span style="color:#000000; font-size: 38px;
+                        font-weight: 500;
+                    ">IODump</span></h1>
+            </a>
+            <i class="menu-toggle-btn fas fa-bars"></i>
+            <nav class="navigation-menu">
+                <a class="main_menu_home_a" href="index.html"> Home</a>
+                <a class="main_menu_home_a" href="event.html"></i> Events</a>
+                <a class="main_menu_home_a" href="about.html"></i> About</a>
+                <a class="main_menu_home_a" href="gallery.html"></i> Gallery</a>
+                <a class="main_menu_home_a" href="faq.html"></i> FAQ</a>
+                <a href="#" class="primary-btn aj_btn"> <i class="fas fa-lock" aria-hidden="true"></i>
+                    Register</a>
+            </nav>
+        </div>
+    </header>
+    <!-- navbar ends -->
+    <!-- hero section starts -->
+    <div class="container-xxl py-2 bg-dark hero-header">
+        <div class="container my-5 py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class=" text-white animated slideInLeft text_iodump_efwe">Welcome To<br>IODump</h1>
+                    <p class="text-white animated slideInLeft mb-4 pb-2">Empowering young minds with technology,
+                        creating awareness for a better tomorrow</p>
+                    <a href="#" class="primary-btn aj_btn"> <i class="fas fa-lock" aria-hidden="true"></i>
+                        Register</a>
+                </div>
+                <div
+                    class="col-lg-6 text-center text-lg-end overflow-hidden .d-sm-none .d-md-block image_div_hero_section">
+                    <img class="img-fluid image_home_banner"
+                        src="https://netnation.com/wp-content/uploads/2019/10/home-V3-01.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hero section ends -->
 
-        <!-- <div class="crousel mt-4">
-            <div class="container">
-                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="src\bootcamp landscape.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption ">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item " data-bs-interval="2000">
-                            <img src="src\1.jpeg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption ">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="src\3.jfif" class="d-block w-100" alt="...">
-                            <div class="carousel-caption ">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </div> -->
-        <!-- Header-->
-        <header class="bg-dark py-5">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center justify-content-center">
-                    <div class="col-lg-8 col-xl-7 col-xxl-6">
-                        <div class="my-5 text-center text-xl-start">
-                            <h1 class="display-5 fw-bolder text-white mb-2">IODump </h1>
-                            <p class="lead fw-normal text-white-50 mb-4">A student-led community that
-                                aims to empower the next generation of tech leaders through learning, innovation, and
-                                problem-solving. Our community is dedicated to exploring the latest technologies and
-                                trends in the field, and to fostering a culture of collaboration and growth.</p>
-                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                <!-- <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Get Started</a> -->
-                                <a class="btn btn-outline-light btn-lg px-4" href="about.html">More about us</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5"
-                            src="assets/iodump.jpg" alt="..." /></div>
-                </div>
-            </div>
-        </header>
-        <!-- Features section-->
-        <section class="py-2" id="features">
-            <div class="container px-5 my-5">
-                <div class="row gx-5">
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h2 class="fw-bolder mb-0">Empowering young minds with technology, creating awareness for a
-                            better tomorrow.</h2>
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="row gx-5 row-cols-1 row-cols-md-2">
-                            <div class="col mb-5 h-100">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
-                                        class="bi bi-people-fill"></i></div>
-                                <h2 class="h5">Community Outreach</h2>
-                                <p class="mb-0">Organizing events and initiatives to give back to the community and
-                                    raise awareness about technology and its impact.</p>
-                            </div>
-                            <div class="col mb-5 h-100">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
-                                        class="bi bi-building"></i></div>
-                                <h2 class="h5">Collaboration and Innovation</h2>
-                                <p class="mb-0">Encouraging members to collaborate and innovate, and providing a
-                                    supportive environment for their ideas and projects.</p>
-                            </div>
-                            <div class="col mb-5 mb-md-0 h-100">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
-                                        class="bi bi-laptop"></i></div>
-                                <h2 class="h5">Project-Based Learning</h2>
-                                <p class="mb-0">Encouraging members to work on real-world projects and develop their
-                                    problem-solving and technical skills.</p>
-                            </div>
-                            <div class="col h-100">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
-                                        class="bi bi-chat-left-text-fill"></i></div>
-                                <h2 class="h5">Networking Opportunities</h2>
-                                <p class="mb-0">Creating opportunities for members to connect with each other and with
-                                    industry professionals.</p>
-                            </div>
-                        </div>
+    <!-- feature section starts -->
+    <section class="feature-section spad">
+        <div class="container container_home_vwe">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3>Empowering young minds</h3>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="py-5">
-            <div class="container px-5 my-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-8 col-xl-6">
-                        <div class="text-center">
-                            <h2 class="fw-bolder">Our recent Events</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="feature__item">
+                        <span class="fa fa-users"></span>
+                        <h5>Community Outreach</h5>
+                        <p>Organizing events and initiatives to give back to the community and raise awareness about
+                            technology and its impact</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="feature__item">
+                        <span class="fa fa-globe"></span>
+                        <h5>Collab and Innovate
+                        </h5>
+                        <p>Encouraging members to collaborate and innovate, and providing a supportive environment for
+                            their ideas</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="feature__item">
+                        <span class="fa fa-headphones"></span>
+                        <h5>Networking Opportunities
+                        </h5>
+                        <p>Creating opportunities for members to connect with each other and with industry
+                            professionals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- feature section ends -->
+
+    <!-- events section starts -->
+    <section class="section_index_f34f4 ">
+        <div class="section-header_wef ">
+            <h2>Recent Events</h2>
+            <p>Event venue location info and gallery</p>
+        </div>
+        <!-- events section ends -->
+        <div class="about_area ">
+            <div class="container container_cv3ef ">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <span class="stroke-text index_stroke_2fwefwe">Blind Coding</span>
+                        <div class="about_thumbs">
+                            <div class="large_img_1">
+                                <img src="assets/aisehi_2.jpg" alt="">
+                            </div>
+                            <div class="small_img_1">
+                                <img src="assets/blindcoding.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
+
+                        <div class="section-title section_titel_indexfew">
+
+                            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                                quidem.
+                                Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                                suscipit
+                                alias ea.</p>
+                        </div>
+
+                        <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                            <div class="icon icon_fwf34f234"><i class="i_index_3434 bi bi-cup-straw"></i></div>
+                            <h4 class="title title_v32ef3e"><a class="a_index_v3434f" href="">Lorem Ipsum</a></h4>
+                            <p class="description description_8j99j8">Voluptatum deleniti atque corrupti quos dolores et
+                                quas molestias
+                                excepturi sint occaecati cupiditate non provident</p>
+                        </div>
+
+                        <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                            <div class="icon icon_fwf34f234"><i class=" i_index_3434 bi bi-people"></i></div>
+                            <h4 class="title title_v32ef3e"><a class="a_index_v3434f" href="">Nemo Enim</a></h4>
+                            <p class="description description_8j99j8">At vero eos et accusamus et iusto odio dignissimos
+                                ducimus qui
+                                blanditiis
+                                praesentium voluptatum deleniti atque</p>
+                        </div>
+                        <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                            <div class="icon icon_fwf34f234"><i class=" i_index_3434 bi bi-people"></i></div>
+                            <h4 class="title title_v32ef3e"><a class="a_index_v3434f" href="">Nemo Enim</a></h4>
+                            <p class="description description_8j99j8">At vero eos et accusamus et iusto odio dignissimos
+                                ducimus qui
+                                blanditiis
+                                praesentium voluptatum deleniti atque</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container container_cv3ef mt-4">
+                <div class="row align-items-center col_fc3_f23f">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <span class="stroke-text index_stroke_2fwefwe index_stroke_2fwefweqq">cybertronic</span>
+                        <div class="about_thumbs">
+                            <div class="large_img_1_2">
+                                <img src="assets/aisehi_2.jpg" alt="">
+                            </div>
+                            <div class="small_img_1 small_img_1_2">
+                                <img class="blind_cwe34" src="assets/blindcoding.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
+
+                        <div class="section-title section_titel_indexfew">
+
+                            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                                quidem.
+                                Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                                suscipit
+                                alias ea.</p>
+                        </div>
+
+                        <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                            <div class="icon icon_fwf34f234"><i class="i_index_3434 bi bi-cup-straw"></i></div>
+                            <h4 class="title title_v32ef3e"><a class="a_index_v3434f" href="">Lorem Ipsum</a></h4>
+                            <p class="description description_8j99j8">Voluptatum deleniti atque corrupti quos dolores et
+                                quas molestias
+                                excepturi sint occaecati cupiditate non provident</p>
+                        </div>
+
+                        <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                            <div class="icon icon_fwf34f234"><i class=" i_index_3434 bi bi-people"></i></div>
+                            <h4 class="title title_v32ef3e"><a class="a_index_v3434f" href="">Nemo Enim</a></h4>
+                            <p class="description description_8j99j8">At vero eos et accusamus et iusto odio dignissimos
+                                ducimus qui
+                                blanditiis
+                                praesentium voluptatum deleniti atque</p>
+                        </div>
+                        <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                            <div class="icon icon_fwf34f234"><i class=" i_index_3434 bi bi-people"></i></div>
+                            <h4 class="title title_v32ef3e"><a class="a_index_v3434f" href="">Nemo Enim</a></h4>
+                            <p class="description description_8j99j8">At vero eos et accusamus et iusto odio dignissimos
+                                ducimus qui
+                                blanditiis
+                                praesentium voluptatum deleniti atque</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container container_cv3ef mt-4 ">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <span class="stroke-text index_stroke_2fwefwe">Blind Coding</span>
+                        <div class="about_thumbs">
+                            <div class="large_img_1">
+                                <img src="assets/aisehi_2.jpg" alt="">
+                            </div>
+                            <div class="small_img_1">
+                                <img src="assets/blindcoding.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
+
+                        <div class="section-title section_titel_indexfew">
+
+                            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                                quidem.
+                                Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                                suscipit
+                                alias ea.</p>
+                        </div>
+
+                        <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                            <div class="icon icon_fwf34f234"><i class="i_index_3434 bi bi-cup-straw"></i></div>
+                            <h4 class="title title_v32ef3e"><a class="a_index_v3434f" href="">Lorem Ipsum</a></h4>
+                            <p class="description description_8j99j8">Voluptatum deleniti atque corrupti quos dolores et
+                                quas molestias
+                                excepturi sint occaecati cupiditate non provident</p>
+                        </div>
+
+                        <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                            <div class="icon icon_fwf34f234"><i class=" i_index_3434 bi bi-people"></i></div>
+                            <h4 class="title title_v32ef3e"><a class="a_index_v3434f" href="">Nemo Enim</a></h4>
+                            <p class="description description_8j99j8">At vero eos et accusamus et iusto odio dignissimos
+                                ducimus qui
+                                blanditiis
+                                praesentium voluptatum deleniti atque</p>
+                        </div>
+                        <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                            <div class="icon icon_fwf34f234"><i class=" i_index_3434 bi bi-people"></i></div>
+                            <h4 class="title title_v32ef3e"><a class="a_index_v3434f" href="">Nemo Enim</a></h4>
+                            <p class="description description_8j99j8">At vero eos et accusamus et iusto odio dignissimos
+                                ducimus qui
+                                blanditiis
+                                praesentium voluptatum deleniti atque</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonials section starts -->
+    <div class="cards-2 bg-gray pt-2">
+        <div class="section-header_wef mt-5">
+            <h2>Testimonials</h2>
+            <p>what people are saying</p>
+        </div>
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card -->
+                    <div class="card">
+                        <img class="quotes" src="https://themewagon.github.io/nubis/images/quotes.svg"
+                            alt="alternative">
+                        <div class="card-body">
+                            <p class="testimonial-text">Suspendisse vitae enim arcu. Aliqu convallis risus a felis
+                                blandit, at
+                                mollis nisi bibendum aliquam noto ricos</p>
+                            <div class="testimonial-author">Roe Smith</div>
+                            <div class="occupation">General Manager, Presentop</div>
+                        </div>
+                        <div class="gradient-floor red-to-blue"></div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <img class="quotes" src="https://themewagon.github.io/nubis/images/quotes.svg"
+                            alt="alternative">
+                        <div class="card-body">
+                            <p class="testimonial-text">Suspendisse vitae enim arcu. Aliqu convallis risus a felis
+                                blandit, at
+                                mollis nisi bibendum aliquam noto ricos</p>
+                            <div class="testimonial-author">Sam Bloom</div>
+                            <div class="occupation">General Manager, Presentop</div>
+                        </div>
+                        <div class="gradient-floor blue-to-purple"></div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <img class="quotes" src="https://themewagon.github.io/nubis/images/quotes.svg"
+                            alt="alternative">
+                        <div class="card-body">
+                            <p class="testimonial-text">Suspendisse vitae enim arcu. Aliqu convallis risus a felis
+                                blandit, at
+                                mollis nisi bibendum aliquam noto ricos</p>
+                            <div class="testimonial-author">Bill McKenzie</div>
+                            <div class="occupation">General Manager, Presentop</div>
+                        </div>
+                        <div class="gradient-floor purple-to-green"></div>
+                    </div>
+                    <!-- end of card -->
+                </div> <!-- end of col -->
+            </div>
+        </div>
+    </div>
+
+    <!-- testimonials section ends -->
+
+
+    <!-- footer section starts -->
+    <footer class="footer-section">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-text">
+                        <div class="ft-logo">
+                            <a href="#" class="footer-logo"><img class="footer_image_f3"
+                                    src="assets/iodump_clear_white.png" alt="Footer Logo"></a>
+                        </div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="event.html">Events</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                        <div class="copyright-text">
+                            <p class="footer_p_tahg3">
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright ©
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved |
+                                made with love <i class="fa fa-heart" aria-hidden="true"></i> by <a
+                                    class="footer_iodump_3f3" href="index.html">IODump</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                        <div class="ft-social">
+                            <a href="#"><i class="bi bi-telegram"></i></a>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-whatsapp"></i></a>
+                            <a href="#"><i class="bi bi-discord"></i></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="row gx-5" id="recent-events">
-                    <!-- Dynamically generate recent events -->
-                </div>
             </div>
-        </section>
-    </main>
-    <!-- Footer-->
-    <div id="footer"></div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/template.js"></script>
-    <script type="module" src="js/indexScript.js"></script>
+        </div>
+    </footer>
+    <!-- footer section ends -->
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
